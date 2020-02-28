@@ -1,7 +1,7 @@
 About kim_edn
 =============
 
-Home: https://github.com/yafshar/kim_edn
+Home: https://github.com/openkim/kim-edn
 
 Package license: CDDL-1.0
 
