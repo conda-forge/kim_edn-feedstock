@@ -1,5 +1,5 @@
 {% set name = "kim_edn" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bab88a0a890598577a5dabe0ff19ed573ef7a0be547e5a47b15deeb4ec711db5
+  sha256: 47aaf852cc8c2876be743c91d230de512d803e0be4c1d0e2b6aabc6a80552c9a
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ test:
     - kim_edn
 
 about:
-  home: https://github.com/yafshar/kim_edn
+  home: https://github.com/openkim/kim-edn
   license: CDDL-1.0
   license_family: OTHER
   license_file: LICENSE.CDDL
@@ -39,7 +39,7 @@ about:
     allows for comments and (2) treats commas as whitespace enabling easier
     templating. KIM-EDN encoder and decoder works for Python 3.6+. It is pure
     Python code with no dependencies.
-  dev_url: https://github.com/yafshar/kim_edn
+  dev_url: https://github.com/openkim/kim-edn
 
 extra:
   recipe-maintainers:
