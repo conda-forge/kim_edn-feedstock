@@ -1,5 +1,5 @@
-{% set name = "kim_edn" %}
-{% set version = "1.1.0" %}
+{% set name = "kim-edn" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47aaf852cc8c2876be743c91d230de512d803e0be4c1d0e2b6aabc6a80552c9a
+  sha256: 7c47d67f5dc110c35238abadb0d9c421ced11f959e5a440858beafb57166de83
 
 build:
   noarch: python
