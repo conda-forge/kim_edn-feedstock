@@ -1,4 +1,4 @@
-About kim_edn
+About kim-edn
 =============
 
 Home: https://github.com/openkim/kim-edn
@@ -36,27 +36,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-kim_edn-green.svg)](https://anaconda.org/conda-forge/kim_edn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/kim_edn.svg)](https://anaconda.org/conda-forge/kim_edn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/kim_edn.svg)](https://anaconda.org/conda-forge/kim_edn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/kim_edn.svg)](https://anaconda.org/conda-forge/kim_edn) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-kim-edn-green.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) |
 
-Installing kim_edn
+Installing kim-edn
 ==================
 
-Installing `kim_edn` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `kim-edn` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `kim_edn` can be installed with:
+Once the `conda-forge` channel has been enabled, `kim-edn` can be installed with:
 
 ```
-conda install kim_edn
+conda install kim-edn
 ```
 
-It is possible to list all of the versions of `kim_edn` available on your platform with:
+It is possible to list all of the versions of `kim-edn` available on your platform with:
 
 ```
-conda search kim_edn --channel conda-forge
+conda search kim-edn --channel conda-forge
 ```
 
 
@@ -101,7 +101,7 @@ Terminology
 Updating kim_edn-feedstock
 ==========================
 
-If you would like to improve the kim_edn recipe or build a new
+If you would like to improve the kim-edn recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
