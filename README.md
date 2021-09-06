@@ -5,9 +5,11 @@ Home: https://github.com/openkim/kim-edn
 
 Package license: CDDL-1.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kim_edn-feedstock/blob/master/LICENSE.txt)
 
 Summary: KIM-EDN encoder and decoder for Python
+
+Development: https://github.com/openkim/kim-edn
 
 KIM-EDN encoder and decoder embraces a subset of
 edn <https://openkim.org/doc/schema/edn-format> as a standard data
@@ -36,7 +38,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-kim-edn-green.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-kim--edn-green.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/kim-edn.svg)](https://anaconda.org/conda-forge/kim-edn) |
 
 Installing kim-edn
 ==================
@@ -45,6 +47,7 @@ Installing `kim-edn` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `kim-edn` can be installed with:
@@ -98,7 +101,7 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating kim_edn-feedstock
+Updating kim-edn-feedstock
 ==========================
 
 If you would like to improve the kim-edn recipe or build a new
@@ -108,16 +111,16 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/kim_edn-feedstock are
+Note that all branches in the conda-forge/kim-edn-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
