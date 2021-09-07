@@ -3,7 +3,7 @@ About kim-edn
 
 Home: https://github.com/openkim/kim-edn
 
-Package license: CDDL-1.0
+Package license: LGPLv2.1+
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kim_edn-feedstock/blob/master/LICENSE.txt)
 
