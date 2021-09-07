@@ -27,9 +27,9 @@ test:
 
 about:
   home: https://github.com/openkim/kim-edn
-  license: CDDL-1.0
-  license_family: OTHER
-  license_file: LICENSE.CDDL
+  license:  LGPL-2.1-or-later
+  license_family: LGPL
+  license_file: LICENSE
   summary: KIM-EDN encoder and decoder for Python
   description: |
     KIM-EDN encoder and decoder embraces a subset of
