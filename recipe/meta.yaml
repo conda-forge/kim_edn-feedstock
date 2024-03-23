@@ -18,9 +18,9 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - versioneer >=0.29
   run:
     - python >=3.8
-    - versioneer >=0.29
 
 test:
   imports:
