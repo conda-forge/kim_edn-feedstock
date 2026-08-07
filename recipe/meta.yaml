@@ -1,5 +1,5 @@
 {% set name = "kim-edn" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,30 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f3317cfc91ba0e3d7b835acaf6520e7832be15b368f6bc4eb7adde7bdc0375a
+  sha256: e5cd30ef9c486c8a59ef77e78f966a01f7848361952ba1ff0290d256c5dbb572
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - versioneer >=0.29
+    - setuptools >=80
+    - setuptools-scm >=9.2
   run:
     - python >={{ python_min }}
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - kim_edn
+  commands:
+    - pip check
 
 about:
   home: https://github.com/openkim/kim-edn
@@ -40,8 +44,8 @@ about:
     format. The primary purpose of this data format choice is to serve as a
     notational superset to JSON with the enhancements being that it (1)
     allows for comments and (2) treats commas as whitespace enabling easier
-    templating. KIM-EDN encoder and decoder works for Python 3.6+. It is pure
-    Python code with no dependencies.
+    templating. KIM-EDN encoder and decoder works with Python 3.10 and later.
+    It is pure Python code with no runtime dependencies.
   dev_url: https://github.com/openkim/kim-edn
 
 extra:
