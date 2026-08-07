@@ -16,8 +16,8 @@ edn <https://openkim.org/doc/schema/edn-format> as a standard data
 format. The primary purpose of this data format choice is to serve as a
 notational superset to JSON with the enhancements being that it (1)
 allows for comments and (2) treats commas as whitespace enabling easier
-templating. KIM-EDN encoder and decoder works for Python 3.6+. It is pure
-Python code with no dependencies.
+templating. KIM-EDN encoder and decoder works with Python 3.10 and later. It is
+pure Python code with no runtime dependencies.
 
 
 Current build status
